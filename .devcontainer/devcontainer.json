@@ -1,11 +1,9 @@
 {
-  "name": "React + Spring Boot with Docker",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "name": "Docker in Docker Codespace",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
   "features": {
     "docker-in-docker": "latest"
   },
   "forwardPorts": [3000, 8080],
-  "postCreateCommand": "docker info"
+  "postCreateCommand": "docker --version"
 }
