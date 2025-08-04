@@ -7,6 +7,5 @@
     "docker-in-docker": "latest"
   },
   "forwardPorts": [3000, 8080],
-  "postCreateCommand": "docker-compose up --build -d",
-  "remoteUser": "vscode"
+  "postCreateCommand": "docker info"
 }
