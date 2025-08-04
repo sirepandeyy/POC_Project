@@ -1,4 +1,2 @@
-FROM mcr.microsoft.com/devcontainers/base:ubuntu
-
-RUN apt-get update && \
-    apt-get install -y docker-compose openjdk-17-jdk maven nodejs npm
+FROM mcr.microsoft.com/vscode/devcontainers/docker-in-docker
+RUN apt-get update && apt-get install -y openjdk-17-jdk maven nodejs npm

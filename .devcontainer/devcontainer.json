@@ -1,8 +1,12 @@
 {
-  "name": "React + Spring Boot Dev",
+  "name": "React + Spring Boot with Docker",
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "features": {
+    "docker-in-docker": "latest"
+  },
   "forwardPorts": [3000, 8080],
-  "postCreateCommand": "docker-compose up --build -d"
+  "postCreateCommand": "docker-compose up --build -d",
+  "remoteUser": "vscode"
 }
