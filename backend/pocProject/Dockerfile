@@ -1,5 +1,5 @@
-# Stage 1: Build with Java 23 JDK
-FROM eclipse-temurin:23-jdk AS builder
+# Stage 1: Build with Maven and Java 23
+FROM maven:3.9.4-eclipse-temurin-23-alpine AS builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
